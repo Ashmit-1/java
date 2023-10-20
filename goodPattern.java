@@ -7,7 +7,6 @@ public class goodPattern {
         int a = variablScanner.nextInt();
         pattern(a);
         variablScanner.close();
-
     }
 
     static void pattern(int x) {
