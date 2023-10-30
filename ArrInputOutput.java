@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrInputOutput {
@@ -14,6 +15,10 @@ public class ArrInputOutput {
         for (int i : myArr) {
             System.out.print(i + " ");
         }
+        System.out.println();
+        System.out.println(Arrays.toString(myArr));
+        input.close();
+
     }
 
 }
