@@ -17,6 +17,9 @@ public class MatrixAddition {
         display(matrix1);
         System.out.println("Matrix2 is as followes: ");
         display(matrix2);
+        System.out.println("The addition of both matrices is as followes: ");
+        int[][] result = add_mat(matrix1, matrix2);
+        display(result);
         enter.close();
 
     }
@@ -40,5 +43,16 @@ public class MatrixAddition {
         for (int[] ele : an_array) {
             System.out.println(Arrays.toString(ele) + " ");
         }
+    }
+
+    static int[][] add_mat(int[][] myArr1, int[][] myArr2) {
+        int[][] result = new int[myArr1.length][myArr1[0].length];
+        for (int i = 0; i < myArr1.length; i++) {
+            for (int j = 0; j < myArr1[i].length; j++) {
+                result[i][j] = myArr1[i][j] + myArr2[i][j];
+            }
+        }
+        return result;
+
     }
 }
