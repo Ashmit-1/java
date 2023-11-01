@@ -10,7 +10,6 @@ public class DualArray {
         int[][] matrix = new int[rows][cols];
         input_data(matrix);
         display(matrix);
-        // System.out.println(Arrays.toString(matrix));
         input.close();
 
     }
@@ -32,13 +31,13 @@ public class DualArray {
 
     static void display(int[][] MyArr) {
         int row = MyArr.length;
-        int col = MyArr[0].length;
         System.out.println("The desired matrix is as followes: ");
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
-                System.out.print(MyArr[i][j] + " ");
-            }
-            System.out.println();
+            // for (int j = 0; j < col; j++) {
+            // System.out.print(MyArr[i][j] + " ");
+            // }
+            System.out.println(Arrays.toString(MyArr[i]));
+            // System.out.println();
         }
     }
 }
