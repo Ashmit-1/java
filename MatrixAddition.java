@@ -31,7 +31,8 @@ public class MatrixAddition {
 
             }
         }
-        input_val.close();
+        // input_val.close();
+
     }
 
     static void display(int[][] an_array) {
