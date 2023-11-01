@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DualArray {
@@ -8,13 +9,8 @@ public class DualArray {
         int cols = input.nextInt();
         int[][] matrix = new int[rows][cols];
         input_data(matrix);
-        System.out.println("The entered matrix is: ");
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
+        display(matrix);
+        // System.out.println(Arrays.toString(matrix));
         input.close();
 
     }
@@ -31,7 +27,18 @@ public class DualArray {
 
             }
         }
-
         in.close();
+    }
+
+    static void display(int[][] MyArr) {
+        int row = MyArr.length;
+        int col = MyArr[0].length;
+        System.out.println("The desired matrix is as followes: ");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(MyArr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
