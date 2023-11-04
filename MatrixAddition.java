@@ -20,7 +20,8 @@ public class MatrixAddition {
         System.out.println("The addition of both matrices is as followes: ");
         int[][] result = add_mat(matrix1, matrix2);
         display(result);
-        int[][] mul = multiply(matrix2, matrix1);
+        System.out.println("The product of two matrices is: ");
+        int[][] mul = multiply(matrix1, matrix2);
         display(mul);
         enter.close();
 
@@ -36,12 +37,11 @@ public class MatrixAddition {
 
             }
         }
-        // input_val.close();
 
     }
 
     static void display(int[][] an_array) {
-        System.out.println("The matrix is: ");
+        // System.out.println("The matrix is: ");
         for (int[] ele : an_array) {
             System.out.println(Arrays.toString(ele) + " ");
         }
@@ -68,11 +68,7 @@ public class MatrixAddition {
         for (int k = 0; k < arr2.length; k++) {
             for (int i = 0; i < arr2.length; i++) {
                 for (int j = 0; j < arr2[i].length; j++) {
-                    arr3[k][i] += arr1[i][j] * arr2[j][i];
-                    System.err.print(arr3[k][i]);
-                    System.out.print(" " + k);
-                    System.out.print(" " + i);
-                    System.out.println(" " + j);
+                    arr3[k][i] += (arr1[k][j] * arr2[j][i]);
 
                 }
             }
