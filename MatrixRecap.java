@@ -45,7 +45,6 @@ public class MatrixRecap {
         for (int i = 0; i < x.length; i++) {
             for (int is : x[i]) {
                 System.out.print(is + " ");
-
             }
             System.out.println();
         }
