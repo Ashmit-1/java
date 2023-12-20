@@ -37,6 +37,7 @@ public class MatrixAddition {
 
             }
         }
+        input_val.close();
 
     }
 

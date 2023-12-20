@@ -28,7 +28,7 @@ public class MatrixRecap {
                 mat[i][j] = input.nextInt();
             }
         }
-        // input.close();
+        input.close();
         return mat;
 
     }
