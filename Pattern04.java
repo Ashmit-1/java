@@ -1,6 +1,17 @@
 import java.util.Scanner;
 
 public class Pattern04 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter the limit: ");
+        int lim = in.nextInt();
+        triangle(lim);
+        invertedTriangle(lim);
+        invertedHollowTriangle(lim);
+        hollowTriangle(lim);
+        in.close();
+    }
+
     static void invertedTriangle(int x) {
         int x1 = x;
         for (int i = 0; i < x; i++) {
@@ -67,14 +78,4 @@ public class Pattern04 {
         }
     }
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter the limit: ");
-        int lim = in.nextInt();
-        triangle(lim);
-        invertedTriangle(lim);
-        invertedHollowTriangle(lim);
-        hollowTriangle(lim);
-        in.close();
-    }
 }
